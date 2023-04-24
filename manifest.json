@@ -1,0 +1,19 @@
+{
+  "name": "改行を削除",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "クリップボードにコピーした文章から改行文字を消去する．",
+  "content_scripts": [
+    {
+      "matches": ["https://www.deepl.com/translator/*"],
+      "js": ["content.js"],
+      "css":["style.css"]
+    }
+  ],
+	"icons": {
+    "16": "img/icon16.png",
+    "64": "img/icon64.png",
+    "128": "img/icon128.png"
+  },
+  "permissions": ["clipboardRead","clipboardWrite","activeTab"]
+}
