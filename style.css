@@ -1,4 +1,4 @@
-#my-button {
+#delete-linefeed-button {
     background-color: white;
     border: 1px solid #dae1e8;
     border-radius: 0.5rem;
@@ -9,6 +9,6 @@
     font-weight: bold;
     font-family:'メイリオ';
 }
-#my-button:hover{
+#delete-linefeed-button:hover{
     background-color: rgba(220, 237, 245, 0.5);
 }

@@ -1,6 +1,6 @@
 {
   "name": "改行を削除",
-  "version": "1.0",
+  "version": "1.0.1",
   "manifest_version": 3,
   "description": "クリップボードにコピーした文章から改行文字を消去する．",
   "content_scripts": [
