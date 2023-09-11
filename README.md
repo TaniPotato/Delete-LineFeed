@@ -1,4 +1,4 @@
-# Document
+# Original Document
 https://note.com/tanipotato/n/nc65eb9eebd04
 
 # Set up
