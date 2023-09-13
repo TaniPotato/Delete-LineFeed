@@ -5,7 +5,10 @@
   "description": "クリップボードにコピーした文章から改行文字を消去する．",
   "content_scripts": [
     {
-      "matches": ["https://www.deepl.com/translator/*"],
+      "matches": [
+        "https://www.deepl.com/translator*",
+        "https://www.deepl.com/ja/translator*"
+      ],
       "js": ["content.js"],
       "css":["style.css"]
     }
