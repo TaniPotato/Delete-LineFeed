@@ -2,7 +2,7 @@
 function removeLineBreaks() {
   navigator.clipboard.readText()
   .then(text => {
-    const withoutNewLine = text.replace(/[\r\n]+/g, "");
+    const withoutNewLine = text.replace(/[\r\n]+/g, " ");
     navigator.clipboard.writeText(withoutNewLine);
   })
   .catch(err => {
