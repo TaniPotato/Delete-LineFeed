@@ -1,3 +1,10 @@
+#delete-linefeed-container {
+    position: fixed;
+    top: 80px;
+    right: 24px;
+    z-index: 2147483647;
+}
+
 #delete-linefeed-button {
     background-color: white;
     border: 1px solid #dae1e8;

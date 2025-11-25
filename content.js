@@ -12,12 +12,20 @@ function removeLineBreaks() {
 
 // ページ内のボタンを作成する関数
 function createButton() {
+  // すでに設置済みなら再生成しない
+  if (document.getElementById('delete-linefeed-container')) return;
+
   let button = document.createElement('button');
   button.id="delete-linefeed-button";
   button.innerText = '改行を削除';
   button.addEventListener('click', removeLineBreaks);
-  const targetElement = document.getElementById('product-navigation-mobile-bar-translator-link');
-  targetElement.parentNode.insertBefore(button, targetElement.nextSibling);
+
+  const container = document.createElement('div');
+  container.id = 'delete-linefeed-container';
+  container.appendChild(button);
+
+  const root = document.body || document.documentElement;
+  root.appendChild(container);
 }
 
 // ページが読み込まれたときにボタンを作成する
